@@ -20,7 +20,7 @@ git clone https://github.com/your-username/my-typescript-vanilla-project.git
 2. Navigate to the project directory:
 
 ```bash
-cd my-typescript-vanilla-project
+cd vanilla-ts-component
 ```
     
 3. Install dependencies:
