@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Clip x3",
+        "price": 9.99,
+        "imageURL": "https://tractive.com/assets/image/shop-frontend/product/trnjaca/tractive-gps-dog-4-spare-charger.png"
+    },
+    {
+        "id": 2,
+        "name": "Clip XL x3",
+        "price": 9.99,
+        "imageURL": "https://tractive.com/assets/image/shop-frontend/product/trnjaca/tractive-gps-dog-4-spare-charger.png"
+    },
+    {
+        "id": 3,
+        "name": "Spare Charging Cable",
+        "price": 9.99,
+        "imageURL": "https://tractive.com/assets/image/shop-frontend/product/trnjaca/tractive-gps-dog-4-spare-charger.png"
+    },
+    {
+        "id": 4,
+        "name": "Clip x3",
+        "price": 9.99,
+        "imageURL": "https://tractive.com/assets/image/shop-frontend/product/trnjaca/tractive-gps-dog-4-spare-charger.png"
+    }
+]
