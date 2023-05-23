@@ -46,7 +46,6 @@ main {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
-    /* Number of lines to show */
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
@@ -76,10 +75,31 @@ main {
 
     #cards-container {
         grid-gap: 10px;
-        padding: 20px 10px;
+        padding: 40px 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    #cards-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    #cards-container::-webkit-scrollbar-track {
+        background-color: #e6e9ed;
+        border-radius: 3px;
+        margin: 100px
+    }
+
+    #cards-container::-webkit-scrollbar-thumb {
+        background-color: #2e2e2e;
+        border-radius: 3px;
+    }
+
+    #cards-container> :last-child {
+        scroll-snap-align: start;
     }
 
     .card {
+        scroll-snap-align: end;
         border-radius: 15px;
         width: 140px;
         height: 100%;
