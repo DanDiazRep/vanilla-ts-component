@@ -1,9 +1,4 @@
-export interface CardData {
-    id: number;
-    name: string;
-    price: number;
-    imageURL: string;
-}
+import { CardData } from './types';
 
 const fetchData = async () => {
     let data: CardData[];

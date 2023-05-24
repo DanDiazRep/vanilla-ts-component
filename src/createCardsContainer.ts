@@ -1,4 +1,5 @@
-import { CardData } from "./fetchData";
+import { CardData } from "./types";
+
 
 const createCardsContainer = (data: CardData[]) => {
     const cardsContainer = document.getElementById("cards-container");
