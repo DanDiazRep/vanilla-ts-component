@@ -1,26 +1,19 @@
-import fetchData, { CardData } from "./fetchData";
+import { CardData } from "./fetchData";
 
-const createCardsContainer = () => {
+const createCardsContainer = (data: CardData[]) => {
     const cardsContainer = document.getElementById("cards-container");
-
-    fetchData().then(data => {
-        let numberOfCards = data.length;
-        try {
-            for (let i = 0; i < numberOfCards; i++) {
-                const card = createCard(data[i]);
-                cardsContainer.appendChild(card);
-            }
-            // Create a variable "total" to set the number of columns in the grid
-            cardsContainer.style.setProperty('--total', numberOfCards.toString());
+    let numberOfCards = data.length;
+    try {
+        for (let i = 0; i < numberOfCards; i++) {
+            const card = createCard(data[i]);
+            cardsContainer.appendChild(card);
         }
-        catch {
-            console.log('There was an error creating the cards');
-        }
-    })
-        .catch(error => {
-            console.log("There was an error creating the cards-container component: ", error);
-            throw error;
-        })
+        // Create a variable "total" to set the number of columns in the grid
+        cardsContainer.style.setProperty('--total', numberOfCards.toString());
+    }
+    catch {
+        console.log('There was an error creating the cards');
+    }
 }
 
 const createCard = (data: CardData) => {
